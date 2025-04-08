@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ความคิดสร้างสรรค์ - เคนดริก ลามาร์</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .artist-container {
+          max-width: 1000px;
+          margin: 0 auto;
+          padding: 20px;
+      }
+
+      .artist-header {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          margin-bottom: 40px;
+          flex-wrap: wrap;
+      }
+
+      .artist-image {
+          width: 300px;
+          height: 300px;
+          object-fit: cover;
+          border-radius: 50%;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .artist-info {
+          flex: 1;
+          min-width: 300px;
+      }
+
+      .albums-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+          gap: 30px;
+          margin-top: 40px;
+      }
+
+      .album {
+          background: #f5f5f5;
+          border-radius: 10px;
+          overflow: hidden;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .album-cover {
+          width: 100%;
+          aspect-ratio: 1/1;
+          object-fit: cover;
+      }
+
+      .album-info {
+          padding: 15px;
+      }
+
+      .album-title {
+          font-size: 18px;
+          margin: 0 0 8px 0;
+          color: #333;
+      }
+
+      .album-year {
+          margin: 0 0 10px 0;
+          color: #666;
+          font-size: 14px;
+      }
+
+      .songs-list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          font-size: 14px;
+      }
+
+      .songs-list li {
+          margin-bottom: 5px;
+          color: #555;
+      }
+
+      .awards {
+          margin-top: 30px;
+          background-color: #f9f9f9;
+          padding: 20px;
+          border-radius: 10px;
+      }
+
+      .awards h2 {
+          margin-top: 0;
+          border-bottom: 2px solid #ddd;
+          padding-bottom: 10px;
+      }
+
+      .awards-list {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 15px;
+      }
+
+      .award {
+          background: white;
+          padding: 10px 15px;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          font-size: 14px;
+      }
+
+      .quote {
+          font-style: italic;
+          font-size: 18px;
+          color: #555;
+          margin: 20px 0;
+          padding: 15px;
+          border-left: 4px solid #3498db;
+          background-color: #f9f9f9;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">หน้าหลัก</a></li>
+        <li><a href="about.html">เกี่ยวกับฉัน</a></li>
+        <li><a href="learning.html">สิ่งที่เรียนรู้</a></li>
+        <li><a href="map.html">แผนที่</a></li>
+        <li><a href="creative.html" class="active">ความคิดสร้างสรรค์</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="artist-container">
+        <h1>ศิลปินที่ชื่นชอบ</h1>
+
+        <div class="artist-header">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/3/32/Pulitzer2018-portraits-kendrick-lamar.jpg"
+            alt="Kendrick Lamar"
+            class="artist-image"
+          />
+          <div class="artist-info">
+            <h2>เคนดริก ลามาร์ (Kendrick Lamar)</h2>
+            <p>
+              เคนดริก ลามาร์ ดัคเวิร์ธ เป็นแร็ปเปอร์ นักแต่งเพลง
+              และนักผลิตเพลงชาวอเมริกัน เขาเกิดในวันที่ 17 มิถุนายน ค.ศ. 1987
+              ที่เมืองคอมพ์ตัน รัฐแคลิฟอร์เนีย
+            </p>
+            <p>
+              ลามาร์ได้รับการยกย่องอย่างกว้างขวางว่าเป็นหนึ่งในแร็ปเปอร์ที่มีอิทธิพลและประสบความสำเร็จมากที่สุดในยุคของเขา
+              เขาได้รับรางวัลแกรมมี่ 13 รางวัล รางวัลพูลิตเซอร์
+              และได้รับการเสนอชื่อเข้าชิงรางวัลออสการ์
+            </p>
+
+            <div class="quote">
+              "If I'm gonna tell a real story, I'm gonna start with my name." -
+              Kendrick Lamar
+            </div>
+          </div>
+        </div>
+
+        <h2>อัลบั้มที่โดดเด่น</h2>
+        <div class="albums-container">
+          <div class="album">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/9/93/KendrickLamarGKMC.jpg"
+              alt="good kid, m.A.A.d city"
+              class="album-cover"
+            />
+            <div class="album-info">
+              <h3 class="album-title">good kid, m.A.A.d city</h3>
+              <p class="album-year">2012</p>
+              <ul class="songs-list">
+                <li>Sherane a.k.a Master Splinter's Daughter</li>
+                <li>Bitch, Don't Kill My Vibe</li>
+                <li>Backseat Freestyle</li>
+                <li>The Art of Peer Pressure</li>
+                <li>Money Trees</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="album">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/f/f6/Kendrick_Lamar_-_To_Pimp_a_Butterfly.png"
+              alt="To Pimp a Butterfly"
+              class="album-cover"
+            />
+            <div class="album-info">
+              <h3 class="album-title">To Pimp a Butterfly</h3>
+              <p class="album-year">2015</p>
+              <ul class="songs-list">
+                <li>Wesley's Theory</li>
+                <li>King Kunta</li>
+                <li>Alright</li>
+                <li>The Blacker the Berry</li>
+                <li>i</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="album">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/4/4b/Damn_album_cover.png"
+              alt="DAMN."
+              class="album-cover"
+            />
+            <div class="album-info">
+              <h3 class="album-title">DAMN.</h3>
+              <p class="album-year">2017</p>
+              <ul class="songs-list">
+                <li>BLOOD.</li>
+                <li>DNA.</li>
+                <li>ELEMENT.</li>
+                <li>LOYALTY. (feat. Rihanna)</li>
+                <li>HUMBLE.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="album">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/e/e1/Mr._Morale_%26_the_Big_Steppers.png"
+              alt="Mr. Morale & the Big Steppers"
+              class="album-cover"
+            />
+            <div class="album-info">
+              <h3 class="album-title">Mr. Morale & the Big Steppers</h3>
+              <p class="album-year">2022</p>
+              <ul class="songs-list">
+                <li>United In Grief</li>
+                <li>N95</li>
+                <li>Worldwide Steppers</li>
+                <li>Die Hard</li>
+                <li>Father Time</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="awards">
+          <h2>รางวัลที่ได้รับ</h2>
+          <div class="awards-list">
+            <div class="award">รางวัลแกรมมี่ 13 รางวัล</div>
+            <div class="award">รางวัลพูลิตเซอร์สาขาดนตรี (อัลบั้ม DAMN.)</div>
+            <div class="award">Billboard Music Awards</div>
+            <div class="award">American Music Awards</div>
+            <div class="award">BET Awards</div>
+            <div class="award">MTV Video Music Awards</div>
+          </div>
+
+          <h2>อิทธิพลและผลงาน</h2>
+          <p>
+            เคนดริก ลามาร์
+            เป็นศิลปินที่มีความโดดเด่นในการใช้เพลงแร็พเล่าเรื่องราวทางสังคมและการเมือง
+            โดยเฉพาะประเด็นเรื่องเชื้อชาติ ความไม่เท่าเทียม
+            และสภาพชีวิตของคนในชุมชนแอฟริกัน-อเมริกัน
+          </p>
+          <p>
+            เพลง "Alright" ของเขากลายเป็นเพลงประท้วงในการเคลื่อนไหว Black Lives
+            Matter
+            และเขาได้รับการยกย่องว่าเป็นศิลปินที่สามารถถ่ายทอดเรื่องราวที่ลึกซึ้งผ่านบทเพลงแร็พได้อย่างยอดเยี่ยม
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Mini Project - Introduction to Programming</p>
+    </footer>
+  </body>
+</html>
